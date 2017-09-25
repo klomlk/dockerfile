@@ -1,0 +1,6 @@
+FROM fedora:latest
+WORKDIR /local
+COPY /home/simplon/json-server/* /local
+RUN dnf -y update && dnf -y install python3 pip3
+EXPOSE 5000
+CMD ["python3","-m pip3 install flask"]
