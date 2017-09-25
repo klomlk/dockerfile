@@ -1,0 +1,2 @@
+FROM busybox:latest
+ENV FORMATION="Gekko" SUBJECT="Docker"
